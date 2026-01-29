@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSC 26 ICT Course | Saiful Islam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { background: #0b0f1a; color: white; font-family: 'Hind Siliguri', sans-serif; }
+        .glass-sidebar { background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(15px); border-right: 1px solid rgba(255, 255, 255, 0.05); }
+        .hero-banner { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid rgba(59, 130, 246, 0.2); }
+        .video-box { position: relative; padding-bottom: 56.25%; height: 0; background: #000; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+        .video-box iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .class-btn { transition: 0.3s; border-radius: 12px; border: 1px solid transparent; margin-bottom: 5px; background: rgba(255,255,255,0.02); }
+        .class-btn:hover { background: rgba(59, 130, 246, 0.1); border-color: #3b82f6; }
+        .class-btn.active { background: #3b82f6 !important; color: white !important; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3); }
+        .archive-tag { font-size: 8px; padding: 1px 4px; border-radius: 3px; background: #475569; margin-left: auto; color: #cbd5e1; }
+        .chapter-title { font-size: 11px; color: #64748b; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; padding: 10px 8px 5px; border-bottom: 1px solid rgba(255,255,255,0.05); margin-bottom: 10px; }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col md:flex-row">
+
+    <aside class="w-full md:w-96 glass-sidebar p-6 h-screen overflow-y-auto flex-shrink-0">
+        <div class="mb-8 flex items-center gap-3">
+            <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-900/40">
+                <i class="fas fa-laptop-code text-xl text-white"></i>
+            </div>
+            <div>
+                <h1 class="text-xl font-bold text-blue-400">ICT PANEL</h1>
+                <p class="text-[10px] text-gray-500 uppercase font-bold tracking-widest">HSC 2026 Batch</p>
+            </div>
+        </div>
+
+        <nav id="classList">
+            <div class="chapter-title">অধ্যায় ০১: তথ্য ও যোগাযোগ প্রযুক্তি</div>
+            <button onclick="play('6S6URhpY02M', 'চ্যাপ্টার ০১: জেনারল ক্লাস', this)" class="class-btn active w-full text-left p-3 flex items-center gap-3">
+                <i class="fas fa-play-circle text-blue-500"></i> <span class="text-sm">General Class</span>
+            </button>
+            <button onclick="play('YJEVxD7K3fk', 'চ্যাপ্টার ০১: আর্কাইভ ক্লাস', this)" class="class-btn w-full text-left p-3 flex items-center gap-3">
+                <i class="fas fa-history text-gray-400"></i> <span class="text-sm">Archive Class</span> <span class="archive-tag">ARCHIVE</span>
+            </button>
+
+            <div class="chapter-title">অধ্যায় ০২: কমিউনিকেশন সিস্টেমস</div>
+            <button onclick="play('9daLhcKhRrA', 'চ্যাপ্টার ০২: ক্লাস ০১', this)" class="class-btn w-full text-left p-3 flex items-center gap-3">
+                <i class="fas fa-play-circle text-blue-500"></i> <span class="text-sm">General Class 01</span>
+            </button>
+            <button onclick="play('78-WfIMXg2M', 'চ্যাপ্টার ০২: ক্লাস ০২', this)" class="class-btn w-full text-left p-3 flex items-center gap-3">
+                <i class="fas fa-play-circle text-blue-500"></i> <span class="text-sm">General Class 02</span>
+            </button>
+            <button onclick="play('Lh5CzZYmyfE', 'চ্যাপ্টার ০২: আর্কাইভ ১', this)" class="class-btn w-full text-left p-3 flex items-center gap-3 text-gray-400">
+                <i class="fas fa-history"></i> <span class="text-xs">Archive Class 01</span> <span class="archive-tag">ARCHIVE</span>
+            </button>
+            <button onclick="play('Imta6d3dpL8', 'চ্যাপ্টার ০২: আর্কাইভ ২', this)" class="class-btn w-full text-left p-3 flex items-center gap-3 text-gray-400">
+                <i class="fas fa-history"></i> <span class="text-xs">Archive Class 02</span> <span class="archive-tag">ARCHIVE</span>
+            </button>
+
+            <div class="chapter-title">অধ্যায় ০৩: সংখ্যা পদ্ধতি ও ডিজিটাল ডিভাইস</div>
+            <div class="grid grid-cols-2 gap-2 mb-2">
+                <button onclick="play('hRbuS7p3lCo', 'চ্যাপ্টার ০৩: ক্লাস ০১', this)" class="class-btn p-2 text-xs">Class 01</button>
+                <button onclick="play('1CVKOIO8P2A', 'চ্যাপ্টার ০৩: ক্লাস ০২', this)" class="class-btn p-2 text-xs">Class 02</button>
+                <button onclick="play('PLscHShDaN4', 'চ্যাপ্টার ০৩: ক্লাস ০৩', this)" class="class-btn p-2 text-xs">Class 03</button>
+                <button onclick="play('xsk4clbAZWw', 'চ্যাপ্টার ০৩: ক্লাস ০৪', this)" class="class-btn p-2 text-xs">Class 04</button>
+                <button onclick="play('5qstoVPUPPM', 'চ্যাপ্টার ০৩: ক্লাস ০৫', this)" class="class-btn p-2 text-xs">Class 05</button>
+                <button onclick="play('ZeSyJRPaa80', 'চ্যাপ্টার ০৩: ক্লাস ০৬', this)" class="class-btn p-2 text-xs">Class 06</button>
+                <button onclick="play('yWii6-XN8SA', 'চ্যাপ্টার ০৩: ক্লাস ০৭', this)" class="class-btn p-2 text-xs">Class 07</button>
+                <button onclick="play('70e3OREInXM', 'চ্যাপ্টার ০৩: ক্লাস ০৮', this)" class="class-btn p-2 text-xs">Class 08</button>
+            </div>
+            <div class="grid grid-cols-4 gap-1">
+                <button onclick="play('yLFCUyl_b74', 'আর্কাইভ: চ্যাপ্টার ৩ C1', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 1</button>
+                <button onclick="play('jsGP3WuFX_o', 'আর্কাইভ: চ্যাপ্টার ৩ C2', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 2</button>
+                <button onclick="play('84GAuawbtsk', 'আর্কাইভ: চ্যাপ্টার ৩ C3', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 3</button>
+                <button onclick="play('iWX-ta9fCG8', 'আর্কাইভ: চ্যাপ্টার ৩ C4', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 4</button>
+                <button onclick="play('jv927ItIJC0', 'আর্কাইভ: চ্যাপ্টার ৩ C5', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 5</button>
+                <button onclick="play('L7xcCBb1y-Q', 'আর্কাইভ: চ্যাপ্টার ৩ C6', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 6</button>
+                <button onclick="play('10rnJcF7H30', 'আর্কাইভ: চ্যাপ্টার ৩ C7', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 7</button>
+                <button onclick="play('zWIbC40v7pg', 'আর্কাইভ: চ্যাপ্টার ৩ C8', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 8</button>
+            </div>
+
+            <div class="chapter-title">অধ্যায় ০৪: ওয়েব ডিজাইন ও HTML</div>
+            <div class="grid grid-cols-2 gap-2 mb-2">
+                <button onclick="play('yW7dr7ZtNMA', 'চ্যাপ্টার ০৪: ক্লাস ০১', this)" class="class-btn p-2 text-xs">Class 01</button>
+                <button onclick="play('z7_fqnATsQ4', 'চ্যাপ্টার ০৪: ক্লাস ০২', this)" class="class-btn p-2 text-xs">Class 02</button>
+                <button onclick="play('zeNN-nyQm80', 'চ্যাপ্টার ০৪: ক্লাস ০৩', this)" class="class-btn p-2 text-xs">Class 03</button>
+                <button onclick="play('LAi3Awpfdf0', 'চ্যাপ্টার ০৪: ক্লাস ০৪', this)" class="class-btn p-2 text-xs">Class 04</button>
+            </div>
+            <div class="grid grid-cols-4 gap-1">
+                <button onclick="play('7Mu1e_N23m8', 'আর্কাইভ: চ্যাপ্টার ৪ C1', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 1</button>
+                <button onclick="play('jVTkYWitQQs', 'আর্কাইভ: চ্যাপ্টার ৪ C2', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 2</button>
+                <button onclick="play('riRn4FwOxtw', 'আর্কাইভ: চ্যাপ্টার ৪ C3', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 3</button>
+                <button onclick="play('5Ub1TfDg7Ew', 'আর্কাইভ: চ্যাপ্টার ৪ C4', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 4</button>
+            </div>
+
+            <div class="chapter-title">অধ্যায় ০৫: প্রোগ্রামিং ভাষা</div>
+            <div class="grid grid-cols-2 gap-2 mb-2">
+                <button onclick="play('X0PjPp3Sn9Q', 'চ্যাপ্টার ০৫: ক্লাস ০১', this)" class="class-btn p-2 text-xs">Class 01</button>
+                <button onclick="play('Tx247ZU-s3c', 'চ্যাপ্টার ০৫: ক্লাস ০২', this)" class="class-btn p-2 text-xs">Class 02</button>
+                <button onclick="play('Oyy9b1Af0Q8', 'চ্যাপ্টার ০৫: ক্লাস ০৩', this)" class="class-btn p-2 text-xs">Class 03</button>
+                <button onclick="play('OZjZ7Hpd7MU', 'চ্যাপ্টার ০৫: ক্লাস ০৪', this)" class="class-btn p-2 text-xs">Class 04</button>
+                <button onclick="play('NW2LgIqvwO4', 'চ্যাপ্টার ০৫: ক্লাস ০৫', this)" class="class-btn p-2 text-xs">Class 05</button>
+                <button onclick="play('ZmeMKklf16s', 'চ্যাপ্টার ০৫: ক্লাস ০৬', this)" class="class-btn p-2 text-xs">Class 06</button>
+                <button onclick="play('nD4kcZZflwU', 'চ্যাপ্টার ০৫: ক্লাস ০৭', this)" class="class-btn p-2 text-xs">Class 07</button>
+                <button onclick="play('E5B6W8fbJZM', 'চ্যাপ্টার ০৫: ক্লাস ০৮', this)" class="class-btn p-2 text-xs">Class 08</button>
+            </div>
+            <div class="grid grid-cols-4 gap-1">
+                <button onclick="play('YeKZZKNzz64', 'আর্কাইভ: চ্যাপ্টার ৫ C1', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 1</button>
+                <button onclick="play('u0Zx_TYrPpQ', 'আর্কাইভ: চ্যাপ্টার ৫ C2', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 2</button>
+                <button onclick="play('10CK_RRW2uk', 'আর্কাইভ: চ্যাপ্টার ৫ C3', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 3</button>
+                <button onclick="play('EaUQoQa5gg0', 'আর্কাইভ: চ্যাপ্টার ৫ C4', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 4</button>
+                <button onclick="play('crczaSJG-K0', 'আর্কাইভ: চ্যাপ্টার ৫ C5', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 5</button>
+                <button onclick="play('lKT1iqZx9wo', 'আর্কাইভ: চ্যাপ্টার ৫ C6', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 6</button>
+                <button onclick="play('v7-BLvk0jZc', 'আর্কাইভ: চ্যাপ্টার ৫ C7', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 7</button>
+                <button onclick="play('1ESWHHTO8pM', 'আর্কাইভ: চ্যাপ্টার ৫ C8', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 8</button>
+            </div>
+
+            <div class="chapter-title">অধ্যায় ০৬: ডেটাবেজ ম্যানেজমেন্ট</div>
+            <div class="grid grid-cols-2 gap-2 mb-2">
+                <button onclick="play('7pCZ-Jf13JE', 'চ্যাপ্টার ০৬: ক্লাস ০১', this)" class="class-btn p-2 text-xs">Class 01</button>
+                <button onclick="play('vzTCBXXXbsQ', 'চ্যাপ্টার ০৬: ক্লাস ০২', this)" class="class-btn p-2 text-xs">Class 02</button>
+                <button onclick="play('pfXe0_EiQi8', 'চ্যাপ্টার ০৬: ক্লাস ০৩', this)" class="class-btn p-2 text-xs">Class 03</button>
+                <button onclick="play('7YFDleAfJvA', 'চ্যাপ্টার ০৬: ক্লাস ০৪', this)" class="class-btn p-2 text-xs">Class 04</button>
+            </div>
+            <div class="grid grid-cols-4 gap-1">
+                <button onclick="play('pdSAbBtMIz0', 'আর্কাইভ: চ্যাপ্টার ৬ C1', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 1</button>
+                <button onclick="play('ZpWBdkp49aY', 'আর্কাইভ: চ্যাপ্টার ৬ C2', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 2</button>
+                <button onclick="play('q-4qLYg5XnA', 'আর্কাইভ: চ্যাপ্টার ৬ C3', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 3</button>
+                <button onclick="play('BI_UAhLz7h4', 'আর্কাইভ: চ্যাপ্টার ৬ C4', this)" class="class-btn p-1 text-[9px] bg-white/5">Arc 4</button>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="flex-1 p-4 md:p-8 flex flex-col">
+        <div class="hero-banner p-6 rounded-3xl mb-8 flex flex-col md:flex-row justify-between items-center gap-4 relative overflow-hidden">
+            <div class="relative z-10">
+                <h1 class="text-2xl md:text-3xl font-black text-white">HSC 26 Full ICT Course</h1>
+                <p class="text-blue-400 font-bold mt-1 tracking-tight">Taught by <span class="text-white">Saiful Islam</span></p>
+                <div class="mt-4 flex items-center gap-2 text-[10px] text-gray-400 font-bold uppercase">
+                    <span class="bg-blue-600/20 text-blue-400 px-2 py-1 rounded">Interactive</span>
+                    <span class="bg-indigo-600/20 text-indigo-400 px-2 py-1 rounded">Archive Support</span>
+                </div>
+            </div>
+            <div class="flex gap-3 relative z-10">
+                <a href="https://t.me/saifulnm" target="_blank" class="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-2xl font-bold text-sm flex items-center gap-2 transition shadow-lg shadow-blue-900/30">
+                    <i class="fab fa-telegram-plane"></i> Any Problem? DM
+                </a>
+            </div>
+            <i class="fas fa-code absolute -right-4 -bottom-4 text-9xl text-white/5 rotate-12"></i>
+        </div>
+
+        <div class="max-w-5xl w-full mx-auto">
+            <div class="video-box mb-6">
+                <iframe id="player" src="https://www.youtube.com/embed/6S6URhpY02M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-start gap-4">
+                <div>
+                    <h2 id="videoTitle" class="text-2xl font-bold text-white tracking-tight">অধ্যায় ০১: তথ্য ও যোগাযোগ প্রযুক্তি (General)</h2>
+                    <div class="flex items-center gap-4 mt-3 text-gray-500 text-xs font-bold uppercase">
+                        <span><i class="fas fa-id-badge text-blue-500 mr-2"></i> Instructor: Saiful Islam</span>
+                        <span class="hidden md:block"><i class="fas fa-calendar-alt text-blue-500 mr-2"></i> Session: 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-auto pt-10 text-center">
+            <p class="text-gray-700 text-[10px] uppercase tracking-[5px] font-black">Developed by Saiful Islam</p>
+        </footer>
+    </main>
+
+    <script>
+        function play(id, title, el) {
+            // ১. ভিডিও সোর্স পরিবর্তন
+            document.getElementById('player').src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+            
+            // ২. টাইটেল পরিবর্তন
+            document.getElementById('videoTitle').innerText = title;
+
+            // ৩. বাটন স্টাইল আপডেট
+            const buttons = document.querySelectorAll('.class-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            el.classList.add('active');
+
+            // ৪. মোবাইল স্ক্রল টু টপ
+            if(window.innerWidth < 768) {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        }
+    </script>
+</body>
+</html>
+
